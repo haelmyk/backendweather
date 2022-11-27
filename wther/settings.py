@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-o#k+gjiyi)i(oha&=awjyd(u=72x(3kao82tme#rcn9=u4-43z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['backendweather-production.up.railway.app']
 
