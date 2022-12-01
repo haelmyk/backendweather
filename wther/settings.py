@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-o#k+gjiyi)i(oha&=awjyd(u=72x(3kao82tme#rcn9=u4-43z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['backendweather-production.up.railway.app']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'backendweather-production.up.railway.app']
 
 
 # Application definition
@@ -48,6 +48,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://backendweather-production.up.railway.app/'
 ]
 
 ROOT_URLCONF = 'wther.urls'
